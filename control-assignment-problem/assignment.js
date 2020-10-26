@@ -13,6 +13,7 @@ if(randomNumber > 0.7 && anotherRandomNumber > 0.7){
     console.log(randomNumber +','+ anotherRandomNumber);
 }else{
     alert("None Much");
+    
 }
 
 let arrayNumbers = [1,2,3,4,5,6,7,8,9];
