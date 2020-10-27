@@ -1,5 +1,5 @@
 const sayHello = name => console.log('Hi ' + name);
-const sayHello1 =(name, phrase) => console.log(phrase+' '+name);
+const sayHello1 =(name, phrase ='Hello') => console.log(phrase+' '+name);
 const sayHello2 = ()=>console.log('I am still learning the javascript');
 const sayHello3 = name => 'Hello ' + name;
 
