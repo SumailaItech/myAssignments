@@ -7,3 +7,20 @@ sayHello('Sumaila');
 sayHello1('Sumaila','Hi');
 sayHello2();
 console.log(sayHello3('Sumaila'));
+
+function checkInput(callBack, ...strings){
+let isEmpty = false;
+for(const str of strings){
+  if(!str){
+    isEmpty = true;
+    break;
+  }
+}
+if(!isEmpty){
+  callBack();
+}
+}
+
+checkInput (()=>{
+  console.log('All are not empty'),'Hi','Hello','There','12','ab','cb'
+});
