@@ -13,3 +13,6 @@ const head = document.head;
 const nTitle = head.querySelector('title');
 nTitle.textContent ='Assignment - Solved!';
 
+const h1 = document.getElementsByTagName('h1')[0];
+h1.textContent ='Assignment - Solved!';
+
