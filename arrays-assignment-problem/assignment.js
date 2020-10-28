@@ -25,7 +25,6 @@ const findMax = (...arrNumber) =>{
 const maxNum = findMax(...arrNumber);
 
 // task three
-
 const findMax1 = (...arrNumber) =>{
     const maxNum = Math.max(...arrNumber);
     const minNum = Math.min(...arrNumber);
@@ -34,3 +33,11 @@ const findMax1 = (...arrNumber) =>{
 
 const [maxNum1, minNum] = findMax1(...arrNumber);
 console.log('Max is '+maxNum1 +' and min is '+minNum);
+
+// Task four
+const fruits = new Set(['orange','mango']);
+fruits.add('banana');
+fruits.add('pawpaw');
+fruits.add('orange');
+fruits.add('mango')
+console.log(fruits);
