@@ -5,3 +5,11 @@ task1.style.backgroundColor ='#000';
 const taskOne = document.querySelector('#task-1');
 taskOne.style.color ='#fff';
 taskOne.style.backgroundColor ='#000';
+
+const cTitle = document.querySelector('title');
+cTitle.textContent ='Assignment - Solved!';
+
+const head = document.head;
+const nTitle = head.querySelector('title');
+nTitle.textContent ='Assignment - Solved!';
+
