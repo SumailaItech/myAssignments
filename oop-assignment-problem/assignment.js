@@ -1,8 +1,19 @@
 class Course{
+  
     constructor(title,length,price){
         this.title = title;
         this.length = length;
-        this.price = price;
+        this.setPrice = price;
+    }
+    set setPrice(price){
+        if(price < 0){
+            throw 'Invalid Price';
+        }
+        this.price =price;
+    }
+
+    get getPrice(){
+        return `\$${this.price}`;
     }
 
     lengthPerPrice(){
@@ -14,7 +25,7 @@ class Course{
         The Summary of the Book
         title: ${this.title},
         Length: ${this.length},
-        Price: ${this.price}
+        Price: ${this.getPrice}
         `;
         return bookSummary;
     }
@@ -59,7 +70,7 @@ console.log(theory.publish());
 console.log('********************************');
 console.log('Course Class section')
 console.log('********************************');
-const math = new Course('math101',52,10);
+const math = new Course('math101',52,12);
 console.log(math.lengthPerPrice());
 console.log(math.summary());
 const chem = new Course('chem101',23,20);
