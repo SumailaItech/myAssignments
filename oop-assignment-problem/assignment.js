@@ -3,16 +3,16 @@ class Course{
     constructor(title,length,price){
         this.title = title;
         this.length = length;
-        this.setPrice = price;
+        this.#setPrice = price;
     }
-    set setPrice(price){
+    set #setPrice(price){
         if(price < 0){
             throw 'Invalid Price';
         }
         this.price =price;
     }
 
-    get getPrice(){
+    get #getPrice(){
         return `\$${this.price}`;
     }
 
@@ -25,7 +25,7 @@ class Course{
         The Summary of the Book
         title: ${this.title},
         Length: ${this.length},
-        Price: ${this.getPrice}
+        Price: ${this.#getPrice}
         `;
         return bookSummary;
     }
