@@ -20,6 +20,45 @@ class Course{
     }
 }
 
+class PracticalCourse extends Course{
+    constructor(title,length,price,numOfExercises){
+        super(title,length,price);
+        this.numOfExercises = numOfExercises;
+    }
+}
+
+class TheoreticalCourse extends Course{
+    constructor(title,length,price){
+        super(title,length,price);
+    }
+
+    publish(){
+        console.log('Publishing....');
+    }
+}
+
+const practical = new PracticalCourse('Practical Book',60,20,3);
+console.log('********************************');
+console.log('Practical Class section')
+console.log('********************************');
+console.log(practical);
+console.log(practical.summary());
+console.log(practical.lengthPerPrice());
+
+console.log('********************************');
+console.log('Theoretical Class section')
+console.log('********************************');
+
+const theory = new TheoreticalCourse('Theory Book',105,40,10);
+console.log(theory);
+console.log(theory.summary());
+console.log(theory.lengthPerPrice());
+console.log(theory.publish());
+
+
+console.log('********************************');
+console.log('Course Class section')
+console.log('********************************');
 const math = new Course('math101',52,10);
 console.log(math.lengthPerPrice());
 console.log(math.summary());
